@@ -1,0 +1,86 @@
+.container{
+    width: 900px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+}
+.container .bar{
+    width: 900px;
+    /* height: 200px; */
+    background-color:red;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    
+}
+.container:hover .bar{
+    animation-name: bar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
+    height: 100px;
+   
+    
+    
+    
+}
+.container .bar p{
+    display: none;
+     
+     
+ }
+.container:hover .bar p{
+   animation-name: para;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+    
+    
+}
+
+
+@keyframes bar{
+    from{
+        height: 0px;
+        
+
+    }
+    to{
+        height:100px;
+        
+
+    }
+}
+@keyframes para{
+    from{
+        display: none;
+
+    }
+    to{
+        display: block;
+
+    }
+}
+/* content: '';
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    border-radius: inherit;
+    border: 1px solid #E5BF4A;
+    -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+    animation: btnIconRipple 2s cubic-bezier(0.4, 0, 1, 1) both infinite; */
+
+
+
+    /* position: absolute;
+    border: 100px solid rgba(229,191,74,0.2);
+    content: "";
+    border-radius: 50%;
+    left: -49px;
+    top: -50px;
+    right: 0;
+    z-index: 0;
+    background: #0000; */
